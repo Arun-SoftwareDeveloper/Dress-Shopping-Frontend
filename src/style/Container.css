@@ -1,0 +1,26 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.header {
+  background: linear-gradient(112.1deg, #202639 11.4%, #3f7c77 70.2%);
+}
+.title-and-slogan {
+  background: linear-gradient(112.1deg, #202639 11.4%, #3f7c77 70.2%);
+  color: rgb(47, 45, 45);
+}

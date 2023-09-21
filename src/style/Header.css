@@ -1,0 +1,47 @@
+/* Header.css */
+
+/* Navbar Styles */
+.container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.navbar {
+  background-color: #343a40; /* Dark background color */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Adjust the brand font size */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Push the navigation items to the right */
+}
+
+.nav-item {
+  margin-right: 20px; /* Adjust the space between navigation items */
+}
+
+.nav-link {
+  color: #ffffff; /* Navigation link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Cart Styles */
+.cart {
+  margin-left: 20px; /* Adjust the space between navigation items and cart icon */
+}
+
+.cart-link {
+  color: #ffffff; /* Cart link color */
+  text-decoration: none; /* Remove underline from the cart link */
+  display: flex;
+  align-items: center; /* Center cart icon and text vertically */
+}
+
+/* Font Awesome Cart Icon (assuming you are using Font Awesome) */
+.fa-cart-shopping {
+  font-size: 1.5rem; /* Adjust cart icon size */
+  margin-right: 5px; /* Add space between the icon and text */
+}
+
+/* You can add more styles as needed for your specific design */
