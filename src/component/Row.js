@@ -1,6 +1,7 @@
 // Row.js
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Container from "../component/Container";
 import "../style/Row.css";
 
 const Row = (props) => {
@@ -32,6 +33,7 @@ const Row = (props) => {
   return (
     <>
       <div className="container">
+        <Container />
         <div className="row">
           {products.map((product) => (
             <div key={product.id} className="col-md-4">
