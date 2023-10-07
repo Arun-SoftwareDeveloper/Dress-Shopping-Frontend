@@ -13,7 +13,7 @@ const Row = (props) => {
   // Fetch product data from the backend when the component mounts
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/products") // Replace with your backend API URL
+      .get("https://trendyshoppie-backend.onrender.com/api/products") // Replace with your backend API URL
       .then((response) => {
         setProducts(response.data);
       })
