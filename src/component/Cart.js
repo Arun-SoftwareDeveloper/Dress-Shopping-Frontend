@@ -2,25 +2,25 @@ import React, { useState } from "react";
 import "../style/Cart.css";
 
 function Cart({ cartItems }) {
-  const [itemCount, setitemCount] = useState(0);
+  // const [itemCount, setitemCount] = useState(0);
   const totalPrice = cartItems.reduce(
     (accumulator, item) => accumulator + item.product_price,
     0
   );
 
-  const increaseItem = (e) => {
-    e.preventDefault();
-    setitemCount(itemCount + 1);
-  };
+  // const increaseItem = (e) => {
+  //   e.preventDefault();
+  //   setitemCount(itemCount + 1);
+  // };
 
-  const decreaseItem = (e) => {
-    e.preventDefault();
-    if (itemCount == 0) {
-    }
-    if (itemCount > 0) {
-      setitemCount(itemCount - 1);
-    }
-  };
+  // const decreaseItem = (e) => {
+  //   e.preventDefault();
+  //   if (itemCount == 0) {
+  //   }
+  //   if (itemCount > 0) {
+  //     setitemCount(itemCount - 1);
+  //   }
+  // };
   return (
     <div className="container">
       <h2 className="cart-title">Cart items</h2>

@@ -5,7 +5,7 @@ import Row from "./component/Row";
 import Cart from "./component/Cart";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
-import Container from "./component/Container";
+// import Container from "./component/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
