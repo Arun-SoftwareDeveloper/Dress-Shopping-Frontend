@@ -1,5 +1,5 @@
 // App.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Row from "./component/Row";
 import Cart from "./component/Cart";
@@ -7,6 +7,7 @@ import Header from "./component/Header";
 import Footer from "./component/Footer";
 // import Container from "./component/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SearchInputContainer from "./component/SearchInputContainer";
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]); // Initialize cart items as an empty array
@@ -46,6 +47,7 @@ const App = () => {
     <>
       <Router>
         <Header cartCount={cartCount} />
+
         <Routes>
           <Route path="/" element={<Row handleAddToCart={handleAddToCart} />} />
           <Route
