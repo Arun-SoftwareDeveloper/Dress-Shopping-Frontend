@@ -1,0 +1,31 @@
+/* SearchInputContainer.css */
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-input {
+  border-radius: 0;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
+.product-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.product-card .btn-primary {
+  width: 100%;
+}

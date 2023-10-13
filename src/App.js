@@ -56,6 +56,10 @@ const App = () => {
               <Cart cartItems={cartItems} handleUpdateCart={handleUpdateCart} />
             }
           />
+          <Route
+            path="/search"
+            element={<SearchInputContainer handleAddToCart={handleAddToCart} />}
+          />
         </Routes>
       </Router>
       <Footer />

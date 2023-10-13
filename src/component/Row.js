@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Container from "../component/Container";
 import "../style/Row.css";
+import { Link } from "react-router-dom";
 
 const Row = (props) => {
   const { handleAddToCart } = props;
@@ -47,14 +48,17 @@ const Row = (props) => {
                   <h5 className="card-title">{product.product_name}</h5>
                   <p className="card-text">{product.product_brand}</p>
                   <p className="card-text">${product.product_price}</p>
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => {
-                      handleAddToCartAndNavigate(product);
-                    }}
-                  >
-                    Add to cart
-                  </button>
+                  <Link to="/cart">
+                    {" "}
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => {
+                        handleAddToCartAndNavigate(product);
+                      }}
+                    >
+                      Add to cart
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
