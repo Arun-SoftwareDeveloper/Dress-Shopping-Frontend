@@ -46,7 +46,7 @@ function SearchInputContainer({ handleAddToCart }) {
         {filteredProducts.map((product) => (
           <div key={product.id} className="col-md-4">
             <div className="card product-card">
-              <a href={product.product_link} target="_blank">
+              <a href={product.product_link}>
                 <img
                   src={product.img}
                   alt={product.product_name}
